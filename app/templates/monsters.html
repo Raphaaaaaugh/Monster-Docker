@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster List</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <button class="header-button">Hunters</button>
+        <button class="header-button">Weapons</button>
+        <button class="header-button">Lore</button>
+    </div>
+    {% for monster in monsters %}
+    <br><br><br>
+    <table class="tableM" border="1">
+        <tr>
+            <td class="monster-title">{{ monster.Title }}</td>
+            <td class="ecology" colspan="2">
+                <font size="50px">Ecology</font>
+           </td>
+        </tr>
+        <tr>
+            <td class="monster-name">{{ monster.Monster_Name }}</td>
+            <td>{{ monster.Ecology }}</td>
+        </tr>
+        <tr>
+            <td class="monster-icon">
+                <img src="{{ url_for('static', filename='/images/' + monster.Monster_Name + '.png') }}" alt="{{ monster.Monster_Name }}">
+            </td>
+        </tr>
+        <tr>
+            <td class="short-text" colspan="2">{{ monster.Descr }}</td>
+        </tr>
+    </table >
+    {% endfor %}
+</body>
+</html>

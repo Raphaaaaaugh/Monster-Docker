@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0cda9;
+    margin: 0;
+}
+
+.header {
+    background-color: #6d0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 40px 10px; /* Increase header height */
+}
+
+.header-button {
+    background-color: aquamarine; /* Lighten button background */
+    color: #000;
+    border: none;
+    width: 150px; /* Set button width */
+    height: 150px; /* Set button height to create perfect squares */
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow */
+    margin: 5px 2px; /* Adjust margins for small space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header-button:hover {
+    background-color: #3f8ef9; /* Darken button background on hover */
+    transform: translateY(-3px);
+}
+
+.header-button:active {
+    background-color: #2762e6; /* Darken button background on click */
+    transform: translateY(0);
+}
+
+/* Basic table */
+/* Style the entire table */
+table.table1 {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: #F6D13A; /* Set a parchment-like background color */
+    border: 2px solid #C2A73A; /* Add a border */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+/* Style table header (th) */
+table.table1 th {
+    background-color: #C2A73A; /* Set a header background color */
+    color: #FFF; /* Header text color */
+}
+
+/* Style table cells (td) */
+table.table1 td {
+    padding: 8px;
+    border: 1px solid #C2A73A; /* Add cell borders */
+}
+
+/* Style alternate table rows for better readability */
+table.table1 tr:nth-child(even) {
+    background-color: #F6D13A;
+}
+table.table1 tr:nth-child(odd) {
+    background-color: #F6D13A;
+}
+
+
+/* Monster table */
+/* Style the entire table */
+table.tableM {
+    width: 70%;
+    margin: auto;
+    background-color: #E0C285; /* Set a sand-like background color */
+    border-collapse: separate;
+    border-spacing: 10px; /* Add spacing between cells */
+    height: 700px;  
+}
+
+/* Style table rows (tr) */
+table.tableM tr {
+    border: 2px solid #E0C285; /* Add a border for each row */
+}
+
+/* Style table cells (td) */
+table.tableM td {
+    padding: 10px;
+    border: 2px solid #E0C285; /* Add a border for each cell */
+}
+
+/* Style Monster Title and Monster Name */
+table.tableM td.monster-title {
+    color: #8B4513; /* Brown color for Monster Title and Name */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Apply stylized font */
+    padding-left: 200px;
+}
+
+table.tableM td.monster-name {
+    color: #8B4513; /* Brown color for Monster Title and Name */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Apply stylized font */
+    font-size: 50px;
+    padding-left: 150px;
+}
+
+/* Style Ecology text */
+table.tableM td.ecology {
+    color: #000; /* Black color for Ecology text */
+    text-shadow: 2px 2px 5px #333; /* Add strong shadow text */
+    padding-right: 150px;
+}
+
+/* Style Monster Icon image */
+table.tableM td.monster-icon img {
+    max-width: 200px; /* Set a maximum width for the image */
+    height: auto;
+    padding-left: 150px;
+}
+
+/* Style Short Text */
+table.tableM td.short-text {
+    font-style: italic; /* Make the text italic */
+    padding-left: 150px;
+}
+
+/* Adjust any other CSS properties as needed for your specific design */
