@@ -42,4 +42,19 @@ VALUES
 
 INSERT INTO weapon (Weapon_Name, Weapon_Type, Attack, Element, ElementType, Sharpness, Firepower)
 VALUES
-  ('Strong Cleave', 1, 960, 0, 1, 4, 1);
+  ('Strong Cleave', 1, 960, 0, 1, 4, 1),
+  ('Wasserfallis', 2, 726, 240, 3, 7, 1),
+  ('Euros', 2, 759, 0, 1, 7, 1),
+  ('True Fatalis Lance', 5, 644, 580, 6, 6, 1),
+  ('Kecha Clanvira', 8, 1248, 580, 2, 8, 1),
+  ('Dancing Grisdrum', 8, 1508, 420, 1, 7, 1),
+  ('Akantor Broadsword', 1, 1632, 0, 1, 5, 1),
+  ('Doomhammer "Blood"', 7, 1508, 0, 1, 7, 1),
+  ('Meteoric Core', 7, 1352, 700, 6, 7, 1),
+  ('Deus Obelisk', 6, 529, 760, 6, 7, 3),
+  ('Ceadeus Regalia', 10, 1080, 310, 3, 7, 1),
+  ('Great Kelbi Deershot', 14, 288, 270, 1, 1, 2),
+  ('Bounding Dalamadur', 11, 930, 320, 1, 7, 1),
+  ('Vayu Sedition', 12, 390, 0, 1, 1, 2),
+  ('Gravios Gigacannon', 13, 480, 0, 1, 1, 4),
+  ('Stygian Luxuria', 4, 378, 430, 6, 7, 1);

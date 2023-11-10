@@ -13,6 +13,7 @@
     <h1>Weapons</h1>
     <table class="table1" border="1">
         <tr>
+            <th></th>
             <th>Name</th>
             <th>Class</th>
             <th>RAW</th>
@@ -21,15 +22,200 @@
             <th>Sharpness</th>
             <th>Firepower</th>
         </tr>
-        {% for weapon in weapons %}
+        {% for greatsword in greatswords %}
         <tr>
-            <td>{{ weapon.Weapon_Name }}</td>
-            <td>{{ weapon.Weapon_Type }}</td>
-            <td>{{ weapon.Attack }}</td>
-            <td>{{ weapon.Element }}</td>
-            <td>{{ weapon.ElementType }}</td>
-            <td>{{ weapon.Sharpness }}</td>
-            <td>{{ weapon.Firepower }}</td>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/GS.png') }}">
+            </td>
+            <td>{{ greatsword.Weapon_Name }}</td>
+            <td>{{ greatsword.Weapon_Type }}</td>
+            <td>{{ greatsword.Attack }}</td>
+            <td>{{ greatsword.Element }}</td>
+            <td>{{ greatsword.ElementType }}</td>
+            <td>{{ greatsword.Sharpness }}</td>
+            <td>{{ greatsword.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for katana in katanas %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/LS.png') }}">
+            </td>
+            <td>{{ katana.Weapon_Name }}</td>
+            <td>{{ katana.Weapon_Type }}</td>
+            <td>{{ katana.Attack }}</td>
+            <td>{{ katana.Element }}</td>
+            <td>{{ katana.ElementType }}</td>
+            <td>{{ katana.Sharpness }}</td>
+            <td>{{ katana.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for sword in dualswords %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/DS.png') }}">
+            </td>
+            <td>{{ sword.Weapon_Name }}</td>
+            <td>{{ sword.Weapon_Type }}</td>
+            <td>{{ sword.Attack }}</td>
+            <td>{{ sword.Element }}</td>
+            <td>{{ sword.ElementType }}</td>
+            <td>{{ sword.Sharpness }}</td>
+            <td>{{ sword.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for sword in swords %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/SNS.png') }}">
+            </td>
+            <td>{{ sword.Weapon_Name }}</td>
+            <td>{{ sword.Weapon_Type }}</td>
+            <td>{{ sword.Attack }}</td>
+            <td>{{ sword.Element }}</td>
+            <td>{{ sword.ElementType }}</td>
+            <td>{{ sword.Sharpness }}</td>
+            <td>{{ sword.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for lance in lances %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/LA.png') }}">
+            </td>
+            <td>{{ lance.Weapon_Name }}</td>
+            <td>{{ lance.Weapon_Type }}</td>
+            <td>{{ lance.Attack }}</td>
+            <td>{{ lance.Element }}</td>
+            <td>{{ lance.ElementType }}</td>
+            <td>{{ lance.Sharpness }}</td>
+            <td>{{ lance.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for gunlance in gunlances %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/GL.png') }}">
+            </td>
+            <td>{{ gunlance.Weapon_Name }}</td>
+            <td>{{ gunlance.Weapon_Type }}</td>
+            <td>{{ gunlance.Attack }}</td>
+            <td>{{ gunlance.Element }}</td>
+            <td>{{ gunlance.ElementType }}</td>
+            <td>{{ gunlance.Sharpness }}</td>
+            <td>{{ gunlance.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for hammer in hammers %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/HA.png') }}">
+            </td>
+            <td>{{ hammer.Weapon_Name }}</td>
+            <td>{{ hammer.Weapon_Type }}</td>
+            <td>{{ hammer.Attack }}</td>
+            <td>{{ hammer.Element }}</td>
+            <td>{{ hammer.ElementType }}</td>
+            <td>{{ hammer.Sharpness }}</td>
+            <td>{{ hammer.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for horn in horns %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/HH.png') }}">
+            </td>
+            <td>{{ horn.Weapon_Name }}</td>
+            <td>{{ horn.Weapon_Type }}</td>
+            <td>{{ horn.Attack }}</td>
+            <td>{{ horn.Element }}</td>
+            <td>{{ horn.ElementType }}</td>
+            <td>{{ horn.Sharpness }}</td>
+            <td>{{ horn.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for swaxe in swaxes %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/SA.png') }}">
+            </td>
+            <td>{{ swaxe.Weapon_Name }}</td>
+            <td>{{ swaxe.Weapon_Type }}</td>
+            <td>{{ swaxe.Attack }}</td>
+            <td>{{ swaxe.Element }}</td>
+            <td>{{ swaxe.ElementType }}</td>
+            <td>{{ swaxe.Sharpness }}</td>
+            <td>{{ swaxe.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for chaxe in chaxes %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/CB.png') }}">
+            </td>
+            <td>{{ chaxe.Weapon_Name }}</td>
+            <td>{{ chaxe.Weapon_Type }}</td>
+            <td>{{ chaxe.Attack }}</td>
+            <td>{{ chaxe.Element }}</td>
+            <td>{{ chaxe.ElementType }}</td>
+            <td>{{ chaxe.Sharpness }}</td>
+            <td>{{ chaxe.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for glaive in glaives %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/IS.png') }}">
+            </td>
+            <td>{{ glaive.Weapon_Name }}</td>
+            <td>{{ glaive.Weapon_Type }}</td>
+            <td>{{ glaive.Attack }}</td>
+            <td>{{ glaive.Element }}</td>
+            <td>{{ glaive.ElementType }}</td>
+            <td>{{ glaive.Sharpness }}</td>
+            <td>{{ glaive.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for lbg in lbgs %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/LB.png') }}">
+            </td>
+            <td>{{ lbg.Weapon_Name }}</td>
+            <td>{{ lbg.Weapon_Type }}</td>
+            <td>{{ lbg.Attack }}</td>
+            <td>{{ lbg.Element }}</td>
+            <td>{{ lbg.ElementType }}</td>
+            <td>{{ lbg.Sharpness }}</td>
+            <td>{{ lbg.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for hbg in hbgs %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/HB.png') }}">
+            </td>
+            <td>{{ hbg.Weapon_Name }}</td>
+            <td>{{ hbg.Weapon_Type }}</td>
+            <td>{{ hbg.Attack }}</td>
+            <td>{{ hbg.Element }}</td>
+            <td>{{ hbg.ElementType }}</td>
+            <td>{{ hbg.Sharpness }}</td>
+            <td>{{ hbg.Firepower }}</td>
+        </tr>
+        {% endfor %}
+        {% for bow in bows %}
+        <tr>
+            <td class="weapon-icon">
+                <img src="{{ url_for('static', filename='/images/BO.png') }}">
+            </td>
+            <td>{{ bow.Weapon_Name }}</td>
+            <td>{{ bow.Weapon_Type }}</td>
+            <td>{{ bow.Attack }}</td>
+            <td>{{ bow.Element }}</td>
+            <td>{{ bow.ElementType }}</td>
+            <td>{{ bow.Sharpness }}</td>
+            <td>{{ bow.Firepower }}</td>
         </tr>
         {% endfor %}
     </table>

@@ -18,11 +18,12 @@ body {
     color: #000;
     border: none;
     width: 150px; /* Set button width */
-    height: 150px; /* Set button height to create perfect squares */
+    height: 80px; /* Set button height to create perfect squares */
     font-size: 18px;
     text-align: center;
     text-decoration: none;
     display: flex;
+    margin: auto;
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow */
@@ -72,6 +73,10 @@ table.table1 tr:nth-child(odd) {
     background-color: #F6D13A;
 }
 
+table.table1 td.weapon-icon img {
+    max-width: 30px; /* Set a maximum width for the image */
+    height: auto;
+}
 
 /* Monster table */
 /* Style the entire table */
