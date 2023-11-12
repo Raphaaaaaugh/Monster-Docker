@@ -25,7 +25,10 @@
         </tr>
         <tr>
             <td class="monster-icon">
-                <img src="{{ url_for('static', filename='/images/' + monster.Monster_Name + '.png') }}" alt="{{ monster.Monster_Name }}">
+                <img src="{{ url_for('static', filename='images/' + monster.Monster_Name + '.png') }}" alt="{{ monster.Monster_Name }}">
+            </td>
+            <td>
+                <audio controls src="{{ url_for('static', filename='audio/' + monster.Monster_Name + '.mp3') }}"></audio>
             </td>
         </tr>
         <tr>
