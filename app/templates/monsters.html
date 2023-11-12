@@ -6,9 +6,18 @@
 </head>
 <body>
     <div class="header">
-        <button class="header-button">Hunters</button>
-        <button class="header-button">Weapons</button>
-        <button class="header-button">Lore</button>
+        <form action="/return_to_menu" method="post">
+            <button class="header-button" value="Go to hunters" type="submit">Return to Index</button>
+        </form>
+        <form action="/go_to_hunters" method="post">
+            <button class="header-button" value="Go to hunters" type="submit">Hunters</button>
+        </form>
+        <form action="/go_to_weapons" method="post">
+            <button class="header-button" value="Go to weapons" type="submit">Weapons</button>
+        </form>
+        <form action="/go_to_lore" method="post">
+            <button class="header-button" value="Go to lore" type="submit">Lore</button>
+        </form>
     </div>
     {% for monster in monsters %}
     <br><br><br>

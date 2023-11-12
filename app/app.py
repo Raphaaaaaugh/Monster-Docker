@@ -39,6 +39,23 @@ def lore_data():
     return results
 
 
+def hunter_data():
+    config = {
+        'user': 'root',
+        'password': 'root',
+        'host': 'db',
+        'port': '3306',
+        'database': 'monsters'
+    }
+    connection = mysql.connector.connect(**config)
+    cursor = connection.cursor(dictionary=True)
+    cursor.execute('SELECT * FROM hunter')
+    results = cursor.fetchall()
+    cursor.close()
+    connection.close()
+    return results
+
+
 def weapon_data():
     config = {
         'user': 'root',
@@ -104,6 +121,13 @@ def index():
     return render_template('index.html', monsters=monsters, lores=lores)
 
 
+@app.route('/return_to_menu', methods=['POST'])
+def menu():
+    monsters = monster_data()
+    lores = lore_data()
+    return render_template('index.html', monsters=monsters, lores=lores)
+
+
 @app.route('/go_to_monsters', methods=['POST'])
 def goToMonsters():
     monsters = monster_data()
@@ -120,6 +144,12 @@ def goTolore():
 def goToWeapons():
     weapons = weapon_data()
     return render_template('weapons.html', greatswords=weapons[0], katanas=weapons[1], dualswords=weapons[2], swords=weapons[3], lances=weapons[4], gunlances=weapons[5], hammers=weapons[6], horns=weapons[7], swaxes=weapons[8], chaxes=weapons[9], glaives=weapons[10], lbgs=weapons[11], hbgs=weapons[12])
+
+
+@app.route('/go_to_hunters', methods=['POST'])
+def goToHunters():
+    hunters = hunter_data()
+    return render_template('hunters.html', hunters=hunters)
 
 
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hunters</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <form action="/go_to_monsters" method="post">
+            <button class="header-button" value="Go to monsters" type="submit">Monsters</button>
+        </form>
+        <form action="/return_to_menu" method="post">
+            <button class="header-button" value="Go to hunters" type="submit">Return to Index</button>
+        </form>
+        <form action="/go_to_weapons" method="post">
+            <button class="header-button" value="Go to weapons" type="submit">Weapons</button>
+        </form>
+        <form action="/go_to_lore" method="post">
+            <button class="header-button" value="Go to lore" type="submit">Lore</button>
+        </form>
+    </div>
+    {% for hunter in hunters %}
+    <br><br><br>
+    <table id="hunter">
+        <tr>
+            <th colspan="2">{{ hunter.Hunter_Name }}</th>
+            <td rowspan="4" id="image-section">
+                <img src="{{ url_for('static', filename='images/' + hunter.Hunter_Name + '.png') }}" alt="{{ hunter.Hunter_Name }}">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">{{ hunter.Origin }}</td>
+        </tr>
+        <tr>
+            <td colspan="2">{{ hunter.Race }}</td>
+        </tr>
+        <tr>
+            <td colspan="2">{{ hunter.Origin }}</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="background-text">
+                {{ hunter.Background }}
+            </td>
+        </tr>
+    </table>
+    {% endfor %}
+</body>
+</html>

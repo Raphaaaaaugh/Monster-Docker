@@ -22,6 +22,17 @@ services:
     networks:
       - mynet
 
+  app3:
+    build: ./app
+    links:
+      - db
+    ports:
+      - "5003:5000"
+    depends_on:
+      - db
+    networks:
+      - mynet
+
   db:
     image: mysql:5.7
     ports:
@@ -43,6 +54,7 @@ services:
     depends_on:
       - app
       - app2
+      - app3
     networks:
       - mynet
 

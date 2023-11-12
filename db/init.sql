@@ -27,6 +27,24 @@ CREATE TABLE weapon (
 );
 
 
+CREATE TABLE hunter (
+  Hunter_Name TEXT,
+  Origin TEXT,
+  Race TEXT,
+  Weapon TEXT,
+  Background TEXT
+);
+
+
+INSERT INTO hunter 
+  (Hunter_Name, Origin, Race, Weapon, Background)
+VALUES
+  ('His-Immenseness', 'Dundorma', 'Wyverian', 'Longsword', 'He is a rarity among the Wyverians due to his giant size. Wyverians of this size only appear every few thousand years, the last ones were Treshi and Pokke Chief elders. His Immenseness is estimated to be 600cm, or more, tall. He appeared at Dundorma from the very beginning and greatly helped in this towns development. He helped the town build the Battlequarters, formed the Elder Dragon Observation Team, and established the Guardians to protect the town.'),
+  ('Treshi', 'Pokke', 'Wyverian', 'Pickaxe', 'His main reason for settling at Pokke Village was due to a giant Machalite Ore in the center of the town, which was the main attraction of the village. Treshi was once a hunter, but always found himself more fascinated with the countless treasures of the world. He quit his hunting career and vowed to spend the rest of his life searching for the treasures around world. Now that he is old, he spends his time in a corner of the Guild Hall, surrounded by his recent acquisitions. There he awaits hunters and gatherers that might accept his treasure hunting requests.'),
+  ('Julius', 'Unknown', 'Human', 'Dual-Swords', 'While younger, the Ace Commander was a subordinate under the leadership of the Master. After a Rathian hunt turned into a Kushala Daora attack, the Master retired from being injured in battle and left the Ace Commander as the new leader of the Ace Hunters. Much later, the Ace Commander and his team were investigating an unidentified monster unknown to the public in order to study its unique Frenzy Virus. Eventually, it was discovered that this monster was the juvenile form of a legendary Elder Dragon. After this beast was slain, him and the Ace Hunters were sent to Dundorma in order to help prepare the town for an Elder Dragon attack. After those events, him and his team continued to study Gore Magala, alongside the recently discovered Hyper Monsters.'),
+  ('Minoto', 'Kamura', 'Wyverian', 'Lance', 'Minoto is the Hub Maiden of Kamura Village. With her calm demeanor, Minoto is as serene as the moon. Although she does not show much emotion, Minoto is actually a very kind-hearted person and even a bit clumsy. Minoto secretly wants to be more like her sister, Hinoa, since she has a lot of respect for her.');
+
+
 INSERT INTO monster_data
   (Monster_Name, Title, Descr, Ecology)
 VALUES
@@ -41,6 +59,9 @@ VALUES
 INSERT INTO lore (Story, Content)
 VALUES
   ('Legend of flight', 'The sky takes flight and the earth trembles.'),
+  ('Legend of storms', 'The storm rages and the earth breaks.'),
+  ('Legend of shores', 'The sea expands and the earth drowns'),
+  ('Legend of graveyards', 'The depths rises and the earth crumbles.'),
   ('Legend of hunt', 'The earth walks, strongest of all.');
 
 

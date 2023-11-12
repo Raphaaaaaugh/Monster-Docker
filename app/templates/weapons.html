@@ -6,11 +6,20 @@
 </head>
 <body>
     <div class="header">
-        <button class="header-button">Monsters</button>
-        <button class="header-button">Hunters          </button>
-        <button class="header-button">Lore</button>
+        <form action="/go_to_monsters" method="post">
+            <button class="header-button" value="Go to monsters" type="submit">Monsters</button>
+        </form>
+        <form action="/go_to_hunters" method="post">
+            <button class="header-button" value="Go to hunters" type="submit">Hunters</button>
+        </form>
+        <form action="/return_to_menu" method="post">
+            <button class="header-button" value="Go to hunters" type="submit">Return to Index</button>
+        </form>
+        <form action="/go_to_lore" method="post">
+            <button class="header-button" value="Go to lore" type="submit">Lore</button>
+        </form>
     </div>
-    <h1>Weapons</h1>
+    <br><br>
     <table class="table1" border="1">
         <tr>
             <th></th>

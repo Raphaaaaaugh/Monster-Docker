@@ -135,4 +135,39 @@ table.tableM td.short-text {
     padding-left: 150px;
 }
 
-/* Adjust any other CSS properties as needed for your specific design */
+
+/* Hunter table styling */
+#hunter {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fcf6ba; /* Slightly gold background */
+    border: 2px solid black;
+}
+
+#hunter td, #hunter th {
+    border: 1px solid black; /* Line each cell in black */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Specific stylings for different sections */
+#hunter th {
+    font-style: italic; /* Name in italic */
+}
+
+#image-section {
+    text-align: center;
+}
+
+#info-section {
+    font-weight: bold; /* Information in bold */
+}
+
+#background-text {
+    font-family: "Times New Roman", Times, serif; /* Classic, old-style font */
+}
+
+h1 {
+    text-align: center;
+}
