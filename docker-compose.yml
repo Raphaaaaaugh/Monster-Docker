@@ -27,7 +27,7 @@ services:
     links:
       - db
     ports:
-      - "5003:5000"
+      - "5002:5000"
     depends_on:
       - db
     networks:
