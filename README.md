@@ -10,4 +10,4 @@ After this, you can access one of the three replicas by going to http://localhos
 
 If elements in pages are missing, that means the database may have not properly been ran, in that case run : docker-compose down, then re-run the project again.
 
-Keep the ports 5000, 5001, 5002, 8080 on your computer opened so that this project may be accessed properly.
+Keep the ports 5000, 5001, 8080 on your computer opened so that this project may be accessed properly.
